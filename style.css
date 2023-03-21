@@ -2,12 +2,15 @@ header {
     text-align: center;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
+article {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.projects article {
+    display: flex;
+    flex-direction: row;
 }
 
 img {
@@ -15,23 +18,28 @@ img {
     max-height: 255px;
 }
 
+p {
+    text-align: justify;
+    margin-inline: 5px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
     }
-    p, h1, h2 {
+    p, h1, h2, h3 {
         color: #eee;
     }
     a {
         color: #faa;
     }
-    .other {
+    h2 {
         background-color: #240;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    .other {
+    h2 {
         background-color: #aea;
     }
 }
