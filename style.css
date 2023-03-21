@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 600px;
+}
