@@ -5,10 +5,33 @@ header {
 section {
     display: flex;
     flex-direction: row;
-}
-
-div {
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    inline-size: 600px;
+}
+
+img {
+    width: 255px;
+    max-height: 255px;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #222;
+    }
+    p, h1, h2 {
+        color: #eee;
+    }
+    a {
+        color: #faa;
+    }
+    .other {
+        background-color: #240;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .other {
+        background-color: #aea;
+    }
 }
