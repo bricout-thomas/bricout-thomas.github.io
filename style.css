@@ -15,7 +15,7 @@ img {
     max-height: 255px;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
     }
@@ -30,7 +30,7 @@ img {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     .other {
         background-color: #aea;
     }
