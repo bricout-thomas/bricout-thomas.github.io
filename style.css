@@ -8,19 +8,30 @@ article {
     margin-right: auto;
 }
 
-.projects article {
-    display: flex;
-    flex-direction: row;
-}
-
 img {
-    width: 255px;
+    max-width: 255px;
     max-height: 255px;
 }
 
 p {
     text-align: justify;
     margin-inline: 5px;
+}
+
+span {
+    font-size: large;    
+}
+
+@media screen and (min-width: 500px) {
+    .projects article:nth-child(even) {
+        display: flex;
+        flex-direction: row;
+    }
+    .projects article:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+        /* background-color: #0aa; */
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,13 +44,24 @@ p {
     a {
         color: #faa;
     }
-    h2 {
+}
+p, h1, h2, h3 {
+    color: #eee;
+}
+a {
+    header {
         background-color: #240;
+    }
+    span {
+        color: #f33;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    h2 {
+    header {
         background-color: #aea;
+    }
+    span {
+        color: #a00;
     }
 }
