@@ -2,7 +2,7 @@ header {
     text-align: center;
 }
 
-article {
+article, .moi p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +20,28 @@ p {
 
 span {
     font-size: large;    
+}
+
+footer h2 {
+    margin-inline: 35%;
+}
+
+footer span {
+    font-size:larger;
+    text-align: center;
+    margin: 5px;
+}
+
+.mecontacter {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mecontacter img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -44,16 +66,19 @@ span {
     a {
         color: #faa;
     }
-    header {
+    header, footer {
         background-color: #240;
     }
     span {
-        color: #f33;
+        color: rgb(255, 88, 88);
+    }
+    .mecontacter span {
+        color: #faf;
     }
 }
 
 @media (prefers-color-scheme: light) {
-    header {
+    header, footer {
         background-color: #aea;
     }
     span {
